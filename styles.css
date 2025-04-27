@@ -1,0 +1,261 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f6f6f6;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+h1, h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Navigation */
+.navbar {
+    background-color: #000;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    float: left;
+}
+
+.logo .icon {
+    margin-right: 10px;
+}
+
+.nav-links {
+    float: right;
+    margin-right: 15px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 15px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #222;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Main content */
+.main-content {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    padding: 25px;
+    margin-top: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Form styling */
+.form-panel {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    padding: 25px;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.form-panel h2 {
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="search"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+    background-color: #fff;
+}
+
+select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23888' d='M6 9L0 3h12z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    padding-right: 30px;
+}
+
+textarea {
+    height: 100px;
+}
+
+button, .btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin-top: 15px;
+}
+
+button:hover, .btn:hover {
+    background: #222;
+}
+
+/* Tables */
+.table-container {
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+}
+
+table th {
+    background-color: #000;
+    color: #fff;
+    padding: 12px;
+    text-align: left;
+    font-weight: normal;
+}
+
+table td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.no-data {
+    text-align: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    color: #666;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+/* Messages */
+.success-message, .error-message, .info-message {
+    padding: 10px;
+    margin: 15px 0;
+    border-radius: 4px;
+}
+
+.success-message {
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    color: #155724;
+}
+
+.error-message {
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+}
+
+.info-message {
+    background-color: #d1ecf1;
+    border: 1px solid #bee5eb;
+    color: #0c5460;
+}
+
+/* Search box */
+.search-box {
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.search-box input[type="text"] {
+    width: calc(100% - 100px);
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.search-box button {
+    width: 80px;
+    display: inline-block;
+    margin-top: 0;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+    
+    .form-panel {
+        width: 100%;
+        padding: 15px;
+    }
+    
+    .nav-links {
+        float: none;
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+    .navbar a {
+        display: inline-block;
+        margin: 5px;
+    }
+    
+    .logo {
+        float: none;
+        text-align: center;
+        margin: 0 0 10px 0;
+        justify-content: center;
+    }
+}
