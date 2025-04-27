@@ -53,5 +53,5 @@ Include screenshots of the application here to showcase its features.
 This project is licensed under the MIT License. Feel free to use and modify it as needed.
 
 ## Author
-- **Name**: Ridam Roy
-- **ID**: 213-15-4260
+- **Name**: Prathona Rani Bristy
+- **ID**: 212-15-14759
